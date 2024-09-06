@@ -29,10 +29,10 @@ export const Dashboard = () => {
     changeLanguage(lang)
   }
 
-  // useEffect(() => {
-  //   const lang = getLanguage();
-  //   i18n.changeLanguage(lang)
-  // })
+  useEffect(() => {
+    const lang = getLanguage();
+    i18n.changeLanguage(lang)
+  }, [])
 
   const items = [
     {
